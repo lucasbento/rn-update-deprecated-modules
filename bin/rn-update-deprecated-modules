@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const { spawn } = require('child_process');
+const commandExists = require('command-exists');
+
+if (!commandExists.sync('jscodeshift')) {
+  return console.log('Please run `yarn global add jscodeshift` first.');
+}
+
+const codemod = spawn('jscodeshift', ['-t', __dirname + '/../src/codemod.js', ...process.argv.slice(2)]);
+
+codemod.stdout.on('data', data => console.log(data.toString()));
+
+codemod.on('close', () => require('../src/showPackagesToInstall'));
