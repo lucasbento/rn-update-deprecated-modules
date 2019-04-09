@@ -1,7 +1,7 @@
 {
   "name": "rn-update-deprecated-modules",
   "description": "Codemod to update import declarations as per react-native > 0.59.x deprecations.",
-  "version": "0.0.6",
+  "version": "0.59.0",
   "author": {
     "name": "Lucas Bento",
     "email": "lucas.bsilva@outlook.com",
@@ -15,6 +15,10 @@
     "command-exists": "^1.2.8",
     "read-pkg-up": "^5.0.0"
   },
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "jscodeshift": "^0.6.3"
+  },
   "homepage": "https://github.com/lucasbento/rn-update-deprecated-modules",
   "keywords": [
     "cli",
@@ -23,5 +27,8 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "repository": "https://github.com/lucasbento/rn-update-deprecated-modules"
+  "repository": "https://github.com/lucasbento/rn-update-deprecated-modules",
+  "scripts": {
+    "test": "jest"
+  }
 }
