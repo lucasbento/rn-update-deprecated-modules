@@ -1,5 +1,3 @@
-// TODO: fix for webview = import { WebView } and not import WebView
-
 const fs = require('fs');
 
 const TEMP_FILE_PATH = './.codemod-update-imports';
