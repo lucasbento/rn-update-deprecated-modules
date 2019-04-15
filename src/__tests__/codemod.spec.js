@@ -1,5 +1,7 @@
 const tests = [
   'OneImport',
+  'MultipleImports',
+  'ModuleWithoutDefaultExport'
 ];
 
 const defineTest = require('jscodeshift/dist/testUtils').defineTest;
