@@ -7,8 +7,11 @@ if (!commandExists.sync('jscodeshift')) {
   return console.log('Please run `yarn global add jscodeshift` first.');
 }
 
+const isPlatformWindows = process.platform === 'win32';
+
 execFileSync('jscodeshift', ['-t', __dirname + '/../src/codemod.js', ...process.argv.slice(2)], {
   stdio: [process.stdin, process.stdout, process.stderr],
+  shell: isPlatformWindows,
 });
 
 require('../src/showPackagesToInstall');
