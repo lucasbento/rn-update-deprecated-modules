@@ -1,7 +1,7 @@
 {
   "name": "rn-update-deprecated-modules",
   "description": "Codemod to update import declarations as per react-native > 0.59.x deprecations.",
-  "version": "0.59.0",
+  "version": "0.60.0",
   "author": {
     "name": "Lucas Bento",
     "email": "lucas.bsilva@outlook.com",
