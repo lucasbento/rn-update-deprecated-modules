@@ -1,5 +1,5 @@
 import React from "react";
-import { AsyncStorage, Image } from "react-native";
+import { AsyncStorage, Image, Geolocation, CheckBox } from "react-native";
 
 const MyComponent = () => {};
 

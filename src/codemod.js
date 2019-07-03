@@ -30,6 +30,14 @@ const DEPRECATED_MODULES = {
     newPackageName: 'react-native-webview',
     specifier: 'importSpecifier',
   },
+  Geolocation: {
+    newPackageName: getModuleNameWithOrg('geolocation'),
+    specifier: 'importDefaultSpecifier',
+  },
+  CheckBox: {
+    newPackageName: getModuleNameWithOrg('checkbox'),
+    specifier: 'importSpecifier',
+  },
 };
 
 let addedPackages = [];
