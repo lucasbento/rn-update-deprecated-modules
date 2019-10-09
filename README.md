@@ -19,6 +19,7 @@ yarn global add jscodeshift
 npx rn-update-deprecated-modules myFile.js
 npx rn-update-deprecated-modules myFile.js mySecondFile.js myThirdFile.js
 npx rn-update-deprecated-modules app/**/*.js
+npx rn-update-deprecated-modules app/**/*.tsx --parser=tsx
 ```
 
 ### Example output
